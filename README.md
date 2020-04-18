@@ -209,7 +209,7 @@ Results on DBP15K(ZH-EN) and DBP15K(JA-EN) (DBP15K(FR-EN) is about to be updated
 
 - **DBP15K** is from the "mapping" folder of [JAPE](https://github.com/nju-websoft/JAPE)(But need to combine "ref_ent_ids" and "sup_ent_ids" into a single file named "ill_ent_ids")
 
-Here, you can directly unpack the data file:
+Here, you can directly unpack the data file after [downloading](https://1drv.ms/u/s!AmQC2vZKsxjzhyCstNUSt2QVQgzi?e=WRE0cA):
 ```
 unzip data.zip
 ```
