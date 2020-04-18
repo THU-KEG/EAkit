@@ -92,76 +92,89 @@ In detail, the following methods are currently implemented:
 
 
 #### Semantic Matching Models
-- **MTransE \[[sh](https://github.com/THU-KEG/EAkit/blob/master/run_MTransE.sh)\]** from Chen *et al.*: [Multilingual Knowledge Graph Embeddings for Cross-lingual Knowledge Alignment](https://www.ijcai.org/proceedings/2017/0209.pdf) (IJCAI 2017) \[[origin](https://github.com/muhaochen/MTransE)\]
-> Encoder: None
-> Decoder: TransE, MTransE_Align
+- **MTransE \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_MTransE.sh)\]** from Chen *et al.*: [Multilingual Knowledge Graph Embeddings for Cross-lingual Knowledge Alignment](https://www.ijcai.org/proceedings/2017/0209.pdf) (IJCAI 2017) \[[origin](https://github.com/muhaochen/MTransE)\]
+    > Encoder: None
 
-- **BootEA \[[sh](https://github.com/THU-KEG/EAkit/blob/master/run_BootEA.sh)\]** from Sun *et al.*: [Bootstrapping Entity Alignment with Knowledge Graph Embedding](https://www.ijcai.org/proceedings/2018/0611.pdf) (IJCAI 2018) \[[origin](https://github.com/nju-websoft/BootEA)\]
-> Encoder: None
-> Decoder: AlignEA
+    > Decoder: TransE, MTransE_Align
 
-- **TransEdge \[[sh](https://github.com/THU-KEG/EAkit/blob/master/run_TransEdge.sh)\]** from Sun *et al.*: [TransEdge: Translating Relation-Contextualized Embeddings for Knowledge Graphs](https://link.springer.com/chapter/10.1007/978-3-030-30793-6_35) (ISWC 2019) \[[origin](https://github.com/nju-websoft/TransEdge)\]
-> Encoder: None
-> Decoder: TransEdge
+- **BootEA \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_BootEA.sh)\]** from Sun *et al.*: [Bootstrapping Entity Alignment with Knowledge Graph Embedding](https://www.ijcai.org/proceedings/2018/0611.pdf) (IJCAI 2018) \[[origin](https://github.com/nju-websoft/BootEA)\]
+    > Encoder: None
 
-- **MMEA \[[sh](https://github.com/THU-KEG/EAkit/blob/master/run_MMEA.sh)\]** from Shi *et al.*: [Modeling Multi-mapping relations for Precise Cross-lingual Entity Alignment](https://www.aclweb.org/anthology/D19-1075.pdf) (EMNLP 2019) [origin]
-> Encoder: None
-> Decoder: MMEA
+    > Decoder: AlignEA
+
+- **TransEdge \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_TransEdge.sh)\]** from Sun *et al.*: [TransEdge: Translating Relation-Contextualized Embeddings for Knowledge Graphs](https://link.springer.com/chapter/10.1007/978-3-030-30793-6_35) (ISWC 2019) \[[origin](https://github.com/nju-websoft/TransEdge)\]
+    > Encoder: None
+
+    > Decoder: TransEdge
+
+- **MMEA \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_MMEA.sh)\]** from Shi *et al.*: [Modeling Multi-mapping relations for Precise Cross-lingual Entity Alignment](https://www.aclweb.org/anthology/D19-1075.pdf) (EMNLP 2019) [origin]
+    > Encoder: None
+
+    > Decoder: MMEA
 
 #### GNN-based Models
-- **GCN-Align \[[sh](https://github.com/THU-KEG/EAkit/blob/master/run_GCN-Align.sh)\]** from Wang *et al.*: [Cross-lingual Knowledge Graph Alignment via Graph Convolutional Networks](https://www.aclweb.org/anthology/D18-1032.pdf) (EMNLP 2018) \[[origin](https://github.com/1049451037/GCN-Align)\]
-> Encoder: GCN-Align
-> Decoder: Align
+- **GCN-Align \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_GCN-Align.sh)\]** from Wang *et al.*: [Cross-lingual Knowledge Graph Alignment via Graph Convolutional Networks](https://www.aclweb.org/anthology/D18-1032.pdf) (EMNLP 2018) \[[origin](https://github.com/1049451037/GCN-Align)\]
+    > Encoder: GCN-Align
 
-- **NAEA \[[sh](https://github.com/THU-KEG/EAkit/blob/master/run_NAEA.sh)\]** from Zhu *et al.*: [Neighborhood-Aware Attentional Representation for Multilingual Knowledge Graphs](https://www.ijcai.org/proceedings/2019/0269.pdf) (IJCAI 2019) [origin]
-> Encoder: NAEA
-> Decoder: [N_TransE], N_TransE, N_R_Align
+    > Decoder: Align
 
-- **KECG \[[sh](https://github.com/THU-KEG/EAkit/blob/master/run_KECG.sh)\]** from Li *et al.*: [Semi-supervised Entity Alignment via Joint Knowledge Embedding Model and Cross-graph Model](https://www.aclweb.org/anthology/D19-1274.pdf) (EMNLP 2019) \[[origin](https://github.com/THU-KEG/KECG)\]
-> Encoder: KECG
-> Decoder: TransE, Align
+- **NAEA \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_NAEA.sh)\]** from Zhu *et al.*: [Neighborhood-Aware Attentional Representation for Multilingual Knowledge Graphs](https://www.ijcai.org/proceedings/2019/0269.pdf) (IJCAI 2019) [origin]
+    > Encoder: NAEA
+
+    > Decoder: \[N_TransE\], N_TransE, N_R_Align
+
+- **KECG \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_KECG.sh)\]** from Li *et al.*: [Semi-supervised Entity Alignment via Joint Knowledge Embedding Model and Cross-graph Model](https://www.aclweb.org/anthology/D19-1274.pdf) (EMNLP 2019) \[[origin](https://github.com/THU-KEG/KECG)\]
+    > Encoder: KECG
+
+    > Decoder: TransE, Align
 
 #### KE-based Models
-- **TransE \[[sh](https://github.com/THU-KEG/EAkit/blob/master/run_TransE.sh)\]** from Bordes *et al.*: [Translating Embeddings for Modeling Multi-relational Data](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/viewFile/9571/9523) (NIPS 2013)
-> Encoder: None
-> Decoder: TransE
+- **TransE \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_TransE.sh)\]** from Bordes *et al.*: [Translating Embeddings for Modeling Multi-relational Data](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/viewFile/9571/9523) (NIPS 2013)
+    > Encoder: None
 
-- **TransH \[[sh](https://github.com/THU-KEG/EAkit/blob/master/run_TransH.sh)\]** from Wang *et al.*: [Knowledge Graph Embedding by Translating on Hyperplanes](https://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/view/8531/8546) (AAAI 2014)
-> Encoder: None
-> Decoder: TransH
+    > Decoder: TransE
 
-- **TransR \[[sh](https://github.com/THU-KEG/EAkit/blob/master/run_TransR.sh)\]** from Lin *et al.*: [Learning Entity and Relation Embeddings for Knowledge Graph Completion](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/viewFile/9571/9523) (AAAI 2015)
-> Encoder: None
-> Decoder: TransR
+- **TransH \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_TransH.sh)\]** from Wang *et al.*: [Knowledge Graph Embedding by Translating on Hyperplanes](https://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/view/8531/8546) (AAAI 2014)
+    > Encoder: None
 
-- **RotatE \[[sh](https://github.com/THU-KEG/EAkit/blob/master/run_RotatE.sh)\]** from Sun *et al.*: [RotatE: Knowledge Graph Embedding by Relational Rotation in Complex Space](https://openreview.net/pdf?id=HkgEQnRqYQ) (ICLR 2019)
-> Encoder: None
-> Decoder: RotatE
+    > Decoder: TransH
 
-- **HAKE \[[sh](https://github.com/THU-KEG/EAkit/blob/master/run_HAKE.sh)\]** from Zhang *et al.*: [Learning Hierarchy-Aware Knowledge Graph Embeddings for Link Prediction](https://arxiv.org/pdf/1911.09419) (AAAI 2020)
-> Encoder: None
-> Decoder: HAKE
+- **TransR \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_TransR.sh)\]** from Lin *et al.*: [Learning Entity and Relation Embeddings for Knowledge Graph Completion](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/viewFile/9571/9523) (AAAI 2015)
+    > Encoder: None
 
-- **DistMult \[[sh](https://github.com/THU-KEG/EAkit/blob/master/run_DistMult.sh)\]** from Yang *et al.*: [Embedding Entities and Relations for Learning and Inference in Knowledge Bases](https://arxiv.org/pdf/1412.6575) (ICLR 2015)
-> Encoder: None
-> Decoder: DistMult
+    > Decoder: TransR
 
-- **ComplEx \[[sh](https://github.com/THU-KEG/EAkit/blob/master/run_ComplEx.sh)\]** from Trouillon *et al.*: [Complex Embeddings for Simple Link Prediction](http://proceedings.mlr.press/v48/trouillon16.pdf) (ICML 2016)
-> Encoder: None
-> Decoder: ComplEx
+- **RotatE \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_RotatE.sh)\]** from Sun *et al.*: [RotatE: Knowledge Graph Embedding by Relational Rotation in Complex Space](https://openreview.net/pdf?id=HkgEQnRqYQ) (ICLR 2019)
+    > Encoder: None
 
-- **ConvE \[[sh](https://github.com/THU-KEG/EAkit/blob/master/run_ConvE.sh)\]** from Dettmers *et al.*: [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/pdf/1707.01476) (AAAI2018)
-> Encoder: None
-> Decoder: ConvE
+    > Decoder: RotatE
+
+- **HAKE \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_HAKE.sh)\]** from Zhang *et al.*: [Learning Hierarchy-Aware Knowledge Graph Embeddings for Link Prediction](https://arxiv.org/pdf/1911.09419) (AAAI 2020)
+    > Encoder: None
+
+    > Decoder: HAKE
+
+- **DistMult \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_DistMult.sh)\]** from Yang *et al.*: [Embedding Entities and Relations for Learning and Inference in Knowledge Bases](https://arxiv.org/pdf/1412.6575) (ICLR 2015)
+    > Encoder: None
+
+    > Decoder: DistMult
+
+- **ComplEx \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_ComplEx.sh)\]** from Trouillon *et al.*: [Complex Embeddings for Simple Link Prediction](http://proceedings.mlr.press/v48/trouillon16.pdf) (ICML 2016)
+    > Encoder: None
+
+    > Decoder: ComplEx
+
+- **ConvE \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_ConvE.sh)\]** from Dettmers *et al.*: [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/pdf/1707.01476) (AAAI2018)
+    > Encoder: None
+
+    > Decoder: ConvE
 
 
 #### Results
-Results on DBP15K(ZH-EN) and DBP15K(JA-EN) (due to page width limit for a good display):
+Results on DBP15K(ZH-EN) and DBP15K(JA-EN) (DBP15K(FR-EN) is about to be updated):
 
-|             <td colspan=3>DBP15K(ZH-EN)  <td colspan=3>DBP15K(JA-EN)
-|-
-|             | Hits@1 | Hits@10 | MRR | Hits@1 | Hits@10 | MRR |
-|-
+| | Hits@1 | Hits@10 | MRR | Hits@1 | Hits@10 | MRR | Hits@1 | Hits@10 | MRR |
+|-|-|-|-|-|-|-|-|-|-|
 | **MTransE** | 0.419 | 0.753 | 0.535 | 0.433 | 0.773 | 0.549 |
 | **BootEA** | 0.490 | 0.793 | 0.593 | 0.499 | 0.813 | 0.605 |
 | **TransEdge** | 0.519 | 0.813 | 0.621 | 0.526 | 0.825 | 0.632 |
@@ -177,6 +190,7 @@ Results on DBP15K(ZH-EN) and DBP15K(JA-EN) (due to page width limit for a good d
 | **DistMult** | 0.180 | 0.400 | 0.255 | 0.058 | 0.179 | 0.099 |
 | **ComplEx** | 0.115 | 0.265 | 0.166 | 0.063 | 0.251 | 0.146 |
 | **ConvE** | 0.210 | 0.466 | 0.299 | 0.339 | 0.556 | 0.415 |
+
 
 
 ### Write a new model
