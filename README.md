@@ -171,7 +171,7 @@ In detail, the following methods are currently implemented:
 
 
 #### Results
-Results on DBP15K.
+Results on DBP15K(zh_en, ja_en, fr_en).
 
 | | Hits@1 | Hits@10 | MRR | Hits@1 | Hits@10 | MRR | Hits@1 | Hits@10 | MRR |
 |-|-|-|-|-|-|-|-|-|-|
