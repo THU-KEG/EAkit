@@ -171,26 +171,25 @@ In detail, the following methods are currently implemented:
 
 
 #### Results
-Results on DBP15K(ZH-EN) and DBP15K(JA-EN) (DBP15K(FR-EN) is about to be updated):
+Results on DBP15K.
 
 | | Hits@1 | Hits@10 | MRR | Hits@1 | Hits@10 | MRR | Hits@1 | Hits@10 | MRR |
 |-|-|-|-|-|-|-|-|-|-|
-| **MTransE** | 0.419 | 0.753 | 0.535 | 0.433 | 0.773 | 0.549 |
-| **BootEA** | 0.490 | 0.793 | 0.593 | 0.499 | 0.813 | 0.605 |
-| **TransEdge** | 0.519 | 0.813 | 0.621 | 0.526 | 0.825 | 0.632 |
-| **MMEA** | 0.405 | 0.672 | 0.499 | 0.397 | 0.680 | 0.496 |
-| **GCN-Align** | 0.410 | 0.756 | 0.527 | 0.442 | 0.810 | 0.566 |
-| **NAEA** | 0.323 | 0.481 | 0.381 | 0.311 | 0.457 | 0.363 |
-| **KECG** | 0.467 | 0.815 | 0.586 | 0.485 | 0.843 | 0.605 |
-| **TransE** | 0.343 | 0.634 | 0.441 | 0.365 | 0.710 | 0.480 |
-| **TransH** | 0.436 | 0.735 | 0.540 | 0.450 | 0.778 | 0.561 |
-| **TransR** | 0.371 | 0.697 | 0.481 | 0.368 | 0.709 | 0.484 |
-| **RotatE** | 0.423 | 0.754 | 0.534 | 0.448 | 0.785 | 0.561 |
-| **HAKE** | 0.288 | 0.588 | 0.391 | 0.319 | 0.607 | 0.421 |
-| **DistMult** | 0.180 | 0.400 | 0.255 | 0.058 | 0.179 | 0.099 |
-| **ComplEx** | 0.115 | 0.265 | 0.166 | 0.063 | 0.251 | 0.146 |
-| **ConvE** | 0.210 | 0.466 | 0.299 | 0.339 | 0.556 | 0.415 |
-
+| **MTransE** | 0.419 | 0.753 | 0.535 | 0.433 | 0.773 | 0.549 | 0.407 | 0.751 | 0.526 |
+| **BootEA** | 0.490 | 0.793 | 0.593 | 0.499 | 0.813 | 0.605 | 0.515 | 0.838 | 0.623 |
+| **TransEdge** | 0.519 | 0.813 | 0.621 | 0.526 | 0.825 | 0.632 | 0.397 | 0.824 | 0.543 |
+| **MMEA** | 0.405 | 0.672 | 0.499 | 0.397 | 0.680 | 0.496 | 0.442 | 0.749 | 0.550 |
+| **GCN-Align** | 0.410 | 0.756 | 0.527 | 0.442 | 0.810 | 0.566 | 0.430 | 0.813 | 0.557 |
+| **NAEA** | 0.323 | 0.481 | 0.381 | 0.311 | 0.457 | 0.363 | 0.307 | 0.460 | 0.362 |
+| **KECG** | 0.467 | 0.815 | 0.586 | 0.485 | 0.843 | 0.605 | 0.479 | 0.844 | 0.602 |
+| **TransE** | 0.343 | 0.634 | 0.441 | 0.365 | 0.710 | 0.480 | 0.374 | 0.735 | 0.493 |
+| **TransH** | 0.436 | 0.735 | 0.540 | 0.450 | 0.778 | 0.561 | 0.485 | 0.821 | 0.599 |
+| **TransR** | 0.371 | 0.697 | 0.481 | 0.368 | 0.709 | 0.484 | 0.378 | 0.741 | 0.497 |
+| **RotatE** | 0.423 | 0.754 | 0.534 | 0.448 | 0.785 | 0.561 | 0.439 | 0.800 | 0.560 |
+| **HAKE** | 0.288 | 0.588 | 0.391 | 0.319 | 0.607 | 0.421 | 0.319 | 0.638 | 0.428 |
+| **DistMult** | 0.180 | 0.400 | 0.255 | 0.058 | 0.179 | 0.099 | 0.095 | 0.285 | 0.157 |
+| **ComplEx** | 0.115 | 0.265 | 0.166 | 0.063 | 0.251 | 0.146 | 0.141 | 0.332 | 0.206 |
+| **ConvE** | 0.210 | 0.466 | 0.299 | 0.339 | 0.556 | 0.415 | 0.350 | 0.602 | 0.439 |
 
 
 ### Write a new model
@@ -218,7 +217,7 @@ unzip data.zip
 
 ## Reqirements
 - Python3 (tested on 3.7.7)
-- PyTorch (tested on 0.4.1)
+- PyTorch (tested on 1.4.0)
 - PyTorch Geometric ([PyG](https://github.com/rusty1s/pytorch_geometric)) (tested on 1.4.3)
 - Numpy
 - Scipy
@@ -245,6 +244,6 @@ Find algorithms from [Entity_Alignment_Papers](https://github.com/THU-KEG/Entity
 
 
 ## Acknowledgement
-We appreciate for the great contributions of: [PyTorch Geometric](https://github.com/rusty1s/pytorch_geometric), [BootEA](https://github.com/nju-websoft/BootEA), [TransEdge](https://github.com/nju-websoft/TransEdge), [AliNet](https://github.com/nju-websoft/AliNet), [TuckER](https://github.com/ibalazevic/TuckER). If we miss some, do please let us know in [Issues](https://github.com/THU-KEG/EAkit/issues).
+We refer to some codes of the following repos, and we appreciate for their great contributions: [PyTorch Geometric](https://github.com/rusty1s/pytorch_geometric), [BootEA](https://github.com/nju-websoft/BootEA), [TransEdge](https://github.com/nju-websoft/TransEdge), [AliNet](https://github.com/nju-websoft/AliNet), [TuckER](https://github.com/ibalazevic/TuckER). If we miss some, do please let us know in [Issues](https://github.com/THU-KEG/EAkit/issues).
 
 This project is mainly contributed by [Chengjiang Li](https://github.com/iamlockelightning), [Lei Hou](https://github.com/HLGreener), [Juanzi Li](http://keg.cs.tsinghua.edu.cn/persons/ljz/).
