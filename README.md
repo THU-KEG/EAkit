@@ -61,12 +61,12 @@ We sort out the existing entity alignment algorithms and modularizing the compos
 
 ### Run an implemented model
 
-Start Tensorboard for observation (run under `examples/`):
+1. Start Tensorboard for observation (run under `examples/`):
 ```
 ./Tensorboard.sh
 ```
 
-Modify and run a script as follow (examples are under `examples/`):
+2. Modify and run a script as follow (examples are under `examples/`):
 ```
 CUDA_VISIBLE_DEVICES=0 python3 run.py --log gcnalign \
                                     --data_dir "data/DBP15K/zh_en" \
