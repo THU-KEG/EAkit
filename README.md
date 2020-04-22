@@ -217,9 +217,9 @@ unzip data.zip
 
 ## Reqirements
 - Python3 (tested on 3.7.7)
-- PyTorch (tested on 1.4.0) [link](https://pytorch.org/)
+- [PyTorch](https://pytorch.org/) (tested on 1.4.0)
 - PyTorch Geometric ([PyG](https://github.com/rusty1s/pytorch_geometric)) (tested on 1.4.3)
-- TensorBoard (tested on 2.0.2) [link](https://www.tensorflow.org/tensorboard/)
+- [TensorBoard](https://www.tensorflow.org/tensorboard/) (tested on 2.0.2)
 - Numpy
 - Scipy
 - Scikit-learn
