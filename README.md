@@ -92,82 +92,36 @@ In detail, the following methods are currently implemented:
 
 
 #### Semantic Matching Models
-- **MTransE \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_MTransE.sh)\]** from Chen *et al.*: [Multilingual Knowledge Graph Embeddings for Cross-lingual Knowledge Alignment](https://www.ijcai.org/proceedings/2017/0209.pdf) (IJCAI 2017) \[[origin](https://github.com/muhaochen/MTransE)\]
-    > Encoder: None
 
-    > Decoder: TransE, MTransE_Align
+| Method |  | Encoder | Decoder |
+| ---- | ---- | ---- | ---- |
+| **[MTransE](https://www.ijcai.org/proceedings/2017/0209.pdf)** from Chen *et al.* (IJCAI 2017) | \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_MTransE.sh)\], \[[origin](https://github.com/muhaochen/MTransE)\] | None | TransE, MTransE_Align |
+| **[BootEA](https://www.ijcai.org/proceedings/2018/0611.pdf)** from Sun *et al.* (IJCAI 2018) | \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_BootEA.sh)\], \[[origin](https://github.com/nju-websoft/BootEA)\] | None | AlignEA |
+| **[TransEdge](https://link.springer.com/chapter/10.1007/978-3-030-30793-6_35)** from Sun *et al.* (ISWC 2019) | \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_TransEdge.sh)\], \[[origin](https://github.com/nju-websoft/TransEdge)\] | None | TransEdge |
+| **[MMEA](https://www.aclweb.org/anthology/D19-1075.pdf)** from Shi *et al.* (EMNLP 2019) | \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_MMEA.sh)\], [origin] | None | MMEA |
 
-- **BootEA \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_BootEA.sh)\]** from Sun *et al.*: [Bootstrapping Entity Alignment with Knowledge Graph Embedding](https://www.ijcai.org/proceedings/2018/0611.pdf) (IJCAI 2018) \[[origin](https://github.com/nju-websoft/BootEA)\]
-    > Encoder: None
-
-    > Decoder: AlignEA
-
-- **TransEdge \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_TransEdge.sh)\]** from Sun *et al.*: [TransEdge: Translating Relation-Contextualized Embeddings for Knowledge Graphs](https://link.springer.com/chapter/10.1007/978-3-030-30793-6_35) (ISWC 2019) \[[origin](https://github.com/nju-websoft/TransEdge)\]
-    > Encoder: None
-
-    > Decoder: TransEdge
-
-- **MMEA \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_MMEA.sh)\]** from Shi *et al.*: [Modeling Multi-mapping relations for Precise Cross-lingual Entity Alignment](https://www.aclweb.org/anthology/D19-1075.pdf) (EMNLP 2019) [origin]
-    > Encoder: None
-
-    > Decoder: MMEA
 
 #### GNN-based Models
-- **GCN-Align \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_GCN-Align.sh)\]** from Wang *et al.*: [Cross-lingual Knowledge Graph Alignment via Graph Convolutional Networks](https://www.aclweb.org/anthology/D18-1032.pdf) (EMNLP 2018) \[[origin](https://github.com/1049451037/GCN-Align)\]
-    > Encoder: GCN-Align
 
-    > Decoder: Align
+| Method |  | Encoder | Decoder |
+| ---- | ---- | ---- | ---- |
+| **[GCN-Align](https://www.aclweb.org/anthology/D18-1032.pdf)** from Wang *et al.* (EMNLP 2018)  | \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_GCN-Align.sh)\], \[[origin](https://github.com/1049451037/GCN-Align)\] | GCN-Align | Align |
+| **[NAEA](https://www.ijcai.org/proceedings/2019/0269.pdf)** from Zhu *et al.* (IJCAI 2019) | \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_NAEA.sh)\], [origin] | NAEA | \[N_TransE\], N_TransE, N_R_Align |
+| **[KECG](https://www.aclweb.org/anthology/D19-1274.pdf)** from Li *et al.* (EMNLP 2019) | \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_KECG.sh)\], \[[origin](https://github.com/THU-KEG/KECG)\] | KECG | TransE, Align |
 
-- **NAEA \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_NAEA.sh)\]** from Zhu *et al.*: [Neighborhood-Aware Attentional Representation for Multilingual Knowledge Graphs](https://www.ijcai.org/proceedings/2019/0269.pdf) (IJCAI 2019) [origin]
-    > Encoder: NAEA
-
-    > Decoder: \[N_TransE\], N_TransE, N_R_Align
-
-- **KECG \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_KECG.sh)\]** from Li *et al.*: [Semi-supervised Entity Alignment via Joint Knowledge Embedding Model and Cross-graph Model](https://www.aclweb.org/anthology/D19-1274.pdf) (EMNLP 2019) \[[origin](https://github.com/THU-KEG/KECG)\]
-    > Encoder: KECG
-
-    > Decoder: TransE, Align
 
 #### KE-based Models
-- **TransE \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_TransE.sh)\]** from Bordes *et al.*: [Translating Embeddings for Modeling Multi-relational Data](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/viewFile/9571/9523) (NIPS 2013)
-    > Encoder: None
 
-    > Decoder: TransE
-
-- **TransH \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_TransH.sh)\]** from Wang *et al.*: [Knowledge Graph Embedding by Translating on Hyperplanes](https://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/view/8531/8546) (AAAI 2014)
-    > Encoder: None
-
-    > Decoder: TransH
-
-- **TransR \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_TransR.sh)\]** from Lin *et al.*: [Learning Entity and Relation Embeddings for Knowledge Graph Completion](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/viewFile/9571/9523) (AAAI 2015)
-    > Encoder: None
-
-    > Decoder: TransR
-
-- **RotatE \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_RotatE.sh)\]** from Sun *et al.*: [RotatE: Knowledge Graph Embedding by Relational Rotation in Complex Space](https://openreview.net/pdf?id=HkgEQnRqYQ) (ICLR 2019)
-    > Encoder: None
-
-    > Decoder: RotatE
-
-- **HAKE \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_HAKE.sh)\]** from Zhang *et al.*: [Learning Hierarchy-Aware Knowledge Graph Embeddings for Link Prediction](https://arxiv.org/pdf/1911.09419) (AAAI 2020)
-    > Encoder: None
-
-    > Decoder: HAKE
-
-- **DistMult \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_DistMult.sh)\]** from Yang *et al.*: [Embedding Entities and Relations for Learning and Inference in Knowledge Bases](https://arxiv.org/pdf/1412.6575) (ICLR 2015)
-    > Encoder: None
-
-    > Decoder: DistMult
-
-- **ComplEx \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_ComplEx.sh)\]** from Trouillon *et al.*: [Complex Embeddings for Simple Link Prediction](http://proceedings.mlr.press/v48/trouillon16.pdf) (ICML 2016)
-    > Encoder: None
-
-    > Decoder: ComplEx
-
-- **ConvE \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_ConvE.sh)\]** from Dettmers *et al.*: [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/pdf/1707.01476) (AAAI2018)
-    > Encoder: None
-
-    > Decoder: ConvE
+| Method |  | Encoder | Decoder |
+| ---- | ---- | ---- | ---- |
+| **[TransE](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/viewFile/9571/9523)** from Bordes *et al.* (NIPS 2013) | \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_TransE.sh)\],  | None | TransE |
+| **[TransH](https://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/view/8531/8546)** from Wang *et al.* (AAAI 2014) | \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_TransH.sh)\],  | None | TransH |
+| **[TransR](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/viewFile/9571/9523)** from Lin *et al.* (AAAI 2015) | \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_TransR.sh)\],  | None | TransR |
+| **[RotatE](https://openreview.net/pdf?id=HkgEQnRqYQ)** from Sun *et al.* (ICLR 2019) | \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_RotatE.sh)\],  | None | RotatE |
+| **[HAKE](https://arxiv.org/pdf/1911.09419)** from Zhang *et al.* (AAAI 2020) | \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_HAKE.sh)\],  | None | HAKE |
+| **[DistMult](https://arxiv.org/pdf/1412.6575)** from Yang *et al.* (ICLR 2015) | \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_DistMult.sh)\],  | None | DistMult |
+| **[ComplEx](http://proceedings.mlr.press/v48/trouillon16.pdf)** from Trouillon *et al.* (ICML 2016) | \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_ComplEx.sh)\],  | None | ComplEx |
+| **[ConvE](https://arxiv.org/pdf/1707.01476)** from Dettmers *et al.* (AAAI 2018) | \[[sh](https://github.com/THU-KEG/EAkit/blob/master/examples/run_ConvE.sh)\],  | None | ConvE |
 
 
 #### Results
