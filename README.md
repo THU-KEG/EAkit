@@ -202,3 +202,19 @@ Find algorithms from [Entity_Alignment_Papers](https://github.com/THU-KEG/Entity
 We refer to some codes of the following repos, and we appreciate for their great contributions: [PyTorch Geometric](https://github.com/rusty1s/pytorch_geometric), [BootEA](https://github.com/nju-websoft/BootEA), [TransEdge](https://github.com/nju-websoft/TransEdge), [AliNet](https://github.com/nju-websoft/AliNet), [TuckER](https://github.com/ibalazevic/TuckER). If we miss some, do please let us know in [Issues](https://github.com/THU-KEG/EAkit/issues).
 
 This project is mainly contributed by [Chengjiang Li](https://github.com/iamlockelightning), [Lei Hou](https://github.com/HLGreener), [Juanzi Li](http://keg.cs.tsinghua.edu.cn/persons/ljz/).
+
+## Citation
+
+If you use the code, please cite the following [paper](https://www.sciencedirect.com/science/article/pii/S2666651021000036):
+
+```
+@article{zeng2021comprehensive,
+  title={A comprehensive survey of entity alignment for knowledge graphs},
+  author={Zeng, Kaisheng and Li, Chengjiang and Hou, Lei and Li, Juanzi and Feng, Ling},
+  journal={AI Open},
+  volume={2},
+  pages={1--13},
+  year={2021},
+  publisher={Elsevier}
+}
+```
